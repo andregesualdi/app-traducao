@@ -1,0 +1,28 @@
+<div class="component">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-6">
+                <app-progresso></app-progresso>
+            </div>
+            <div class="col-sm-6">
+                <div class="d-flex justify-content-end">
+                    <app-tentativas></app-tentativas>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h6>{{ titulo }}</h6>
+                <p>{{ frase[0] }}</p>
+
+                <div class="form-group">
+                    <textarea class="form-control" rows="3" (input)="atualizaResposta($event)"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary">Verificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
